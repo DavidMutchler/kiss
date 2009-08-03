@@ -27,7 +27,7 @@ copy_header.commands = cp GLee/GLee.h ../include/GL
 }
 
 win32: {
-## FIXME: Add gl_dir.commands for windows
+gl_dir.commands = mkdir ..\\include\\GL
 copy_header.commands = copy GLee\\GLee.h ..\\include\\GL
 }
 

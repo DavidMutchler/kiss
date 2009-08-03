@@ -33,6 +33,13 @@ include_dir.target = include
 include_dir.commands = mkdir -p include
 }
 
+windows: {
+lib_dir.target = lib
+lib_dir.commands = mkdir lib
+include_dir.target = include
+include_dir.commands = mkdir include
+}
+
 QMAKE_EXTRA_TARGETS += lib_dir include_dir
 POST_TARGETDEPS += $$lib_dir.target $$include_dir.target
 
